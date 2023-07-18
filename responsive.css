@@ -1,0 +1,16 @@
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-menu > ul{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-menu > ul{
+        flex-direction: column;
+    }
+}
