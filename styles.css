@@ -43,6 +43,7 @@
   align-items: center;
   width: 262px;
   height: 56px;
+  border: 0px;
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
 }
