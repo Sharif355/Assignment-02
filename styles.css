@@ -251,17 +251,10 @@
 .card-content {
   position: relative;
 }
-.image-overlay {
-  position: absolute;
-  top: 100;
-  right: 50;
-
-  background: rgba(0, 0, 0, 0.6);
-}
-.card-content img:hover {
-  cursor: pointer;
-  border: 5px solid #ff42a5;
-  border-radius: 20px;
+.card-content img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .card-title {
   color: #534c64;
@@ -271,6 +264,49 @@
   line-height: 30px;
   width: 342px;
 }
+.card-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.overlay-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.overlay-div-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fas.fa-play-circle {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.overlay-div p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-content:hover .overlay-div {
+  opacity: 1;
+}
 
 /*Play Instantly Section style */
 .play-container {
@@ -278,10 +314,10 @@
   display: flex;
   justify-content: space-between;
 }
-.play-container-01{
-    margin: 0px 295px 0px 240px;
-    display: flex;
-    justify-content: space-between;
+.play-container-01 {
+  margin: 0px 295px 0px 240px;
+  display: flex;
+  justify-content: space-between;
 }
 .play-title {
   padding-top: 250px;
@@ -295,7 +331,7 @@
   text-align: right;
   padding-bottom: 25px;
 }
-.play-title-1{
+.play-title-1 {
   padding-top: 250px;
   font-family: Work Sans;
   font-size: 48px;
@@ -324,7 +360,7 @@
   font-weight: 400;
   line-height: 30px;
 }
-.play-description-1{
+.play-description-1 {
   width: 353px;
   color: #534c64;
   text-align: left;
@@ -333,12 +369,12 @@
   font-weight: 400;
   line-height: 30px;
 }
-.small-image{
+.small-image {
   position: relative;
   bottom: 270px;
   right: 150px;
 }
-.small-image-2{
+.small-image-2 {
   position: relative;
   bottom: 245px;
   left: 530px;
